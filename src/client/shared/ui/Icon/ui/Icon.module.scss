@@ -1,0 +1,32 @@
+.Icon {
+    transition: 0.3s;
+    color: var(--icon);
+}
+
+.hover {
+    &:hover {
+        path {
+            fill: var(--accent);
+            animation: animate 0.3s linear;
+
+            @keyframes animate {
+                0% {
+                    fill: var(--icon);
+                }
+
+                100% {
+                    fill: var(--accent);
+                }
+            }
+        }
+    }
+}
+
+.button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
